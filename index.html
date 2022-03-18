@@ -12,13 +12,13 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/icons/MSCR.png"
+      href="assets/images/logoWoman.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/icons/MSCR.png"
+      href="assets/images/logoWoman.png"
     />
 
     <!-- Animate CSS CDN -->
@@ -26,7 +26,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Stefania Cacho Ruschner | Product Owner | Software Developer</title>
+    <title>Stefi CR | Product Owner | Software Developer</title>
   </head>
 
   <body>
@@ -38,6 +38,7 @@
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#downloadcv" class="nav-link">DownloadCV</a></li>
       </ul>
       <button class="burger-menu" id="burger-menu">
         <ion-icon class="bars" name="menu-outline"></ion-icon>
@@ -45,91 +46,78 @@
       </button>
     </nav>
     
-  
-
-    <!-- Hero Section -->
+    <!-- Image  and Bio Section -->
     <section class="hero" id="about">
       <img
-        src="assets/images/wfh_1.svg"
-        alt="jane-doe"
+        src="assets/images/logoWoman.png"
+        alt="steficr"
         loading="lazy"
         class="hero-img"
       />
       <div class="bio animate__animated animate__shakeX">
         <h2 class="bio-title">About Me</h2>
+        <h3 class="bio-definition">Economist | Almost Mgst Finance | Software Developer | Product Owner Enthusiast | Many more things</h2>
         <p class="bio-text">
-          I consider myself a team player, organized, dedicated, proactive,curious ,documentation freak and 
-          with a hands on approach
         </p>
       </div>
     </section>
 
     <!-- More about -->
     <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-        nostrum dolor minus, libero delectus praesentium perferendis
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-        consequuntur labore? Ea totam voluptas amet!
-      </p>
-    </section>
-
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
-
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-html-5.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-css3.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-bootstrap.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-react-native.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-git.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
+      <h2>More About Me & What I do</h2>
+      <div class="more-about-me" style="width:50%;float:left">
+        <p>
+          Team Player | Organized | Proactive | Documentation Freak | Curious | Hands On Approach
+        </p>
+      </div>
+      <div class="skills" id="skills" style="width:50%;float:right">
+        <h2 class="skill-header">My Top Skills & Certification</h2>  
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <img
+              src="assets/icons/icons8-html-5.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-css3.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-javascript.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <br style="clear:both;"/>  
+          </div>
+  
+          <div class="second-set animate__animated animate__pulse">
+            <img
+              src="assets/icons/icons8-bootstrap.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-react-native.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-git.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
         </div>
       </div>
+      <br style="clear:both;"/>
     </section>
 
     <!-- Projects section -->
@@ -183,10 +171,20 @@
         </div>
       </div>
     </section>
+    
+    <!-- Blog and research section -->
+    <section class="blog-research" id="blog-research">
+      <iframe class="blog-notion" src="https://embednotion.com/embed/f7brfa0c"></iframe>  
+
+    </section>
+
+
+
 
     <!-- Contact section -->
+   <section class="contact-and-cv" id="contact">
     <div class="row">
-      <div class="column" style="background-color:rgb(255, 255, 255);">
+      <div class="column" >
         <section class="contact" id="contact">
           <h2>Get In Touch With Me</h2>
           <div class="contact-form-container">
@@ -237,15 +235,17 @@
           </div>
         </section>
       </div>
-      <div class="column" style="background-color:rgb(255, 255, 255);">
-        <section class="download-cv" id="download-cv">
+      <div class="column">
+        <section class="download-cv" id="downloadcv">
           <h2>Download CV</h2>
-          <p>Some text..</p>
+          <a href="Stefania_Cacho_Ruschner.pdf" target="_blank">
+            <button type="button" class="buttonCV">Download</button>
+            </a>
         </section>
 
       </div>
     </div>
-
+  </section>
 
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">

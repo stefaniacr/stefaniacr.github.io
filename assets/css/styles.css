@@ -3,17 +3,19 @@
 /* Variables */
 :root {
   --font-family: "Roboto", sans-serf;
-  --normal-font: 400;
-  --bold-font: 700;
-  --bolder-font: 900;
-  --bg-color: #e3e1e1;
-  --primary-color: #669787;
-  --secondary-color: #56a7dd;
+  --font-list:"Roboto",
+  --normal-font: 500;
+  --bold-font: 250;
+  --bolder-font: 550;
+  --background-color:#ffffff;
+  --bg-color: #e4ecf0;
+  --primary-color: #4f7479c4;
+  --secondary-color: #357a8d;
   --primary-shadow: #ccceeb;
   --secondary-shadow: #c4a598;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
-  --line-height: 1.7rem;
+  --line-height: 1.5rem;
   --transition: 0.3s;
 }
 /* Variables end */
@@ -45,7 +47,7 @@ a:hover {
 
 body {
   font-family: var(--font-family);
-  background-color: #ffffff;
+  background-color: var(--background-color);
 }
 
 section {
@@ -71,6 +73,7 @@ nav {
 
 nav h1 {
   color: var(--primary-color);
+  font-weight: 500;
 }
 
 nav a {
@@ -101,57 +104,74 @@ nav ul li {
 }
 /* Navbar ends */
 
-/* Hero section */
+/* Stefi image section */
 .hero {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   gap: 2.5rem;
   max-width: 68.75rem;
   margin: auto;
+  font-family: var(--font-family);
 }
 
 .hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+  height: 30rem;
+  width: 100rem;
+  align-items: left;
 }
 
 .bio {
-  width: 25rem;
-  padding: 0.625rem;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  width: 150rem;
+  height: 30rem;
+  padding: 4rem;
+  border-radius: 4px;
 }
 
-.bio h1 {
+.bio h2 {
   margin-bottom: var(--bottom-margin);
+  color: var(--primary-color);
+  font-weight: var(--bold-font);
+}
+
+.bio h3 {
+  margin-bottom: var(--bottom-margin);
+  color: var(--primary-color);
+  font-weight: var(--bold-font);
+  padding-top: 15rem;
+ 
 }
 
 .bio p {
   line-height: var(--line-height);
   padding: 0.3rem 0;
 }
-/* Hero section ends */
+/* Stefi image section ends */
 
-/* More about */
+/* More about me and what I do section */
 .more-about {
   background-color: var(--bg-color);
+  color: var(--primary-color);
   padding: 1rem 6rem;
 }
 
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
+  font-weight: var(--bold-font);
 }
 
-.more-about p {
-  line-height: var(--line-height);
-  padding: 0.4rem;
+.more-about-me p {
+  line-height: var(--line-height);  
+  text-align: left;
+  padding: 0.6rem;
+  height: 30rem;
+  width: 100rem;
+  align-items: left;  
 }
-/* More about ends */
 
-/* Skills section */
 .skills {
+  color: var(--primary-color);
   max-width: 68.75rem;
   margin: auto;
   text-align: center;
@@ -160,6 +180,7 @@ nav ul li {
 
 .skill-header {
   margin-bottom: 1rem;
+  font-weight: var(--bold-font);
 }
 
 .skills-wrapper img {
@@ -174,6 +195,7 @@ nav ul li {
 
 /* Projects section */
 .projects {
+  color: var(--primary-color);
   background-color: var(--bg-color);
   padding: 32px 0;
   margin-top: 2rem;
@@ -215,6 +237,22 @@ nav ul li {
 
 /* Projects section ends */
 
+/* Blog and research starts  */
+.blog-research {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  padding: 1rem 6rem;
+
+}
+.iframe { 
+  width: 100%; 
+  height: 500px; 
+  border: 2px solid #ccc; 
+  border-radius: 10px; 
+  padding: none; } 
+
+/* Blog and research ends */
+
 .column {
   float: left;
   width: 50%;
@@ -232,12 +270,22 @@ nav ul li {
   }
 }
 /* Download CV section */
-.download-cv h2 {
-  margin-top: 2rem;
+.contact-and-cv{
+  background-color:rgb(255, 255, 255);
+  font: var(--font-family)
 }
 .download-cv h2 {
   text-align: center;
+  margin-top: 2rem;
   margin-bottom: var(--bottom-margin-2);
+}
+
+.buttonCV {
+  margin:auto;
+  display:block;
+  background-color: #5e909e;
+  font-size: large;
+  font: var(--font-family);
 }
 
 /* Contacts section */
