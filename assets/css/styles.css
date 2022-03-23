@@ -12,7 +12,7 @@
   --primary-color: #4f7479c4;
   --secondary-color: #357a8d;
   --primary-shadow: #ccceeb;
-  --secondary-shadow: #c4a598;
+  --secondary-shadow: #94b8ac;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.5rem;
@@ -188,8 +188,11 @@ nav ul li {
 }
 
 .icon {
-  width: 11.875rem;
-  height: 11.25rem;
+  width: 8.875rem;
+  height: 8.25rem;
+}
+.ul.a {
+  list-style-type: circle;
 }
 /* Skills section ends */
 
