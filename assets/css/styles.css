@@ -36,10 +36,10 @@ ul {
   list-style-type: none;
 }
 
-a {
+/*a {
   text-decoration: none;
   color: var(--primary-color);
-}
+}*/
 
 a:hover {
   color: var(--secondary-color);
@@ -107,45 +107,43 @@ nav ul li {
 /* Stefi image section */
 .hero {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: left;
   gap: 2.5rem;
   max-width: 68.75rem;
-  margin: auto;
+  /*margin: auto;*/
   font-family: var(--font-family);
 }
 
-.hero img {
-  height: 30rem;
-  width: 100rem;
+.hero-img {
+  height: 50rem;
+  width: 50rem;
   align-items: left;
 }
-
-.bio {
-  width: 150rem;
+/* Stefi About me section */
+.about-me {
+  font-family: var(--font-family);
+  text-align: center;
+  width: 100%;
+  padding-top: 1.8rem;
+  border-radius: 40px;
+  color: var(--primary-color);
+  font-weight: var(--bold-font);
+}
+.about-me-description {
+  padding-top: 20rem;
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+  font-weight: var(--bold-font);
+  color: var(--primary-color);
   height: 30rem;
-  padding: 4rem;
-  border-radius: 4px;
+  width: 50rem;
 }
 
-.bio h2 {
-  margin-bottom: var(--bottom-margin);
-  color: var(--primary-color);
-  font-weight: var(--bold-font);
-}
-
-.bio h3 {
-  margin-bottom: var(--bottom-margin);
-  color: var(--primary-color);
-  font-weight: var(--bold-font);
-  padding-top: 15rem;
- 
-}
-
-.bio p {
-  line-height: var(--line-height);
-  padding: 0.3rem 0;
-}
+ .about-me img {
+  width: 5rem;
+  height: 5rem;
+ }
 /* Stefi image section ends */
 
 /* More about me and what I do section */
@@ -163,6 +161,7 @@ nav ul li {
 
 .more-about-me p {
   line-height: var(--line-height);  
+  font-weight: var(--bold-font);
   text-align: left;
   padding: 0.6rem;
   height: 30rem;
@@ -191,8 +190,9 @@ nav ul li {
   width: 8.875rem;
   height: 8.25rem;
 }
-.ul.a {
-  list-style-type: circle;
+.certifiaction-list {
+  text-align: left;
+  margin-left: 220px;
 }
 /* Skills section ends */
 
@@ -364,7 +364,7 @@ nav ul li {
 }
 /* Contacts section ends */
 
-/* Social buttons */
+/* Social buttons 
 .socials {
   display: flex;
   flex-direction: column;
@@ -372,11 +372,9 @@ nav ul li {
   right: 1%;
   bottom: 50%;
 }
+*/
 
-.socicon {
-  width: 2rem;
-  height: 2rem;
-}
+
 /* Social button ends */
 
 /* Scroll to top button */
@@ -452,11 +450,15 @@ footer {
     margin-top: -4rem;
     flex-direction: column;
     gap: 0;
+    width: 0.875rem;
+    height: 5.25rem;
   }
-
-  .hero img {
-    height: 37.5rem;
-    width: 30rem;
+  .hero h2{
+    font-size: 1.5em;
+    margin-block-start: 30em;
+    margin-block-end: 3em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
 
   .bio {

@@ -54,12 +54,22 @@
         loading="lazy"
         class="hero-img"
       />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <h3 class="bio-definition">Economist | Almost Mgst Finance | Software Developer | Product Owner Enthusiast | Many more things</h2>
-        <p class="bio-text">
-        </p>
-      </div>
+      <section class="about-me" id="about-me">
+        <h2 class="about-me">About Me</h2>
+          <h3 class="about-me-description">Economist | Almost Mgst Finance | Software Developer | Product Owner Enthusiast | Many more things</h3>
+            <a href="www.linkedin.com/in/maria-stefania-cacho-ruschner" target="_blank"
+            ><img
+              src="assets/icons/icons8-linkedin-100-2.png"
+              alt="Linkedin"
+              class="socicon-linkedin"/>
+            </a>
+            <a href="www.linkedin.com/in/maria-stefania-cacho-ruschner" target="_blank"
+            ><img
+              src="assets/icons/icons8-github-100-2.png"
+              alt="Linkedin"
+              class="socicon-github"/>
+            </a>
+        </section>
     </section>
 
     <!-- More about -->
@@ -191,84 +201,70 @@
 
 
     <!-- Contact section -->
-   <section class="contact-and-cv" id="contact">
-    <div class="row">
-      <div class="column" >
-        <section class="contact" id="contact">
-          <h2>Get In Touch With Me</h2>
-          <div class="contact-form-container">
-            <div class="contact-form">
-              <form action="https://formspree.io/f/xqknqkzj" method="POST">
-                <div class="form-control">
-                  <label for="name">Name</label>
+    <section class="contact-and-cv" id="contact">
+      <div class="row">
+        <div class="column" >
+          <section class="contact" id="contact">
+            <h2>Get In Touch With Me</h2>
+            <div class="contact-form-container">
+              <div class="contact-form">
+                <form action="https://formspree.io/f/xqknqkzj" method="POST">
+                  <div class="form-control">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="sender-name"
+                      placeholder="Enter Your Name"
+                      class="input-field"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="sender-email"
+                      placeholder="Enter Your Email"
+                      class="input-field"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea
+                      id="message"
+                      cols="60"
+                      rows="10"
+                      placeholder="Enter Your Message"
+                      name="message"
+                      class="input-field"
+                      required
+                    ></textarea>
+                  </div>
                   <input
-                    type="text"
-                    id="name"
-                    name="sender-name"
-                    placeholder="Enter Your Name"
-                    class="input-field"
-                    required
+                    type="submit"
+                    value="Submit"
+                    id="submit-btn"
+                    class="submit-btn"
                   />
-                </div>
-                <div class="form-control">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="sender-email"
-                    placeholder="Enter Your Email"
-                    class="input-field"
-                    required
-                  />
-                </div>
-                <div class="form-control">
-                  <label for="message">Message</label>
-                  <textarea
-                    id="message"
-                    cols="60"
-                    rows="10"
-                    placeholder="Enter Your Message"
-                    name="message"
-                    class="input-field"
-                    required
-                  ></textarea>
-                </div>
-                <input
-                  type="submit"
-                  value="Submit"
-                  id="submit-btn"
-                  class="submit-btn"
-                />
-              </form>
+                </form>
+              </div>
             </div>
-          </div>
-        </section>
-      </div>
-      <div class="column">
-        <section class="download-cv" id="downloadcv">
-          <h2>Download CV</h2>
-          <a href="Stefania_Cacho_Ruschner.pdf" target="_blank">
-            <button type="button" class="buttonCV">Download</button>
-            </a>
-        </section>
+          </section>
+        </div>
+        <div class="column">
+          <section class="download-cv" id="downloadcv">
+            <h2>Download CV</h2>
+            <a href="Stefania_Cacho_Ruschner.pdf" target="_blank">
+              <button type="button" class="buttonCV">Download</button>
+              </a>
+          </section>
 
+        </div>
       </div>
-    </div>
-  </section>
-
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
-    </div>
+    </section>
 
     <!-- Scroll to top -->
     <i class="scroll-up" id="scroll-up"
